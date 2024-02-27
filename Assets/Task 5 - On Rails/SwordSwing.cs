@@ -13,6 +13,10 @@ public class SwordSwing : MonoBehaviour
 
 	void Update () 
 	{
+        if (Input.acceleration.magnitude > 0.1f)
+        {
+			Swing();
+		}
 		// code to trigger Swing method on relative movement downards
 	}
 
